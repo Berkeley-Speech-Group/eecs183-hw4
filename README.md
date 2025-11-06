@@ -4,26 +4,28 @@ This assignment consists of three parts: probing experiments, Automatic Speech R
 
 ## Overview
 
-- **Part A**: Probing experiments with Hubert model (35 points)
-- **Part B**: ASR by fine-tuning Hubert (25 points)
+- **Part A**: Probing experiments with Hubert model (30 points)
+- **Part B**: ASR by fine-tuning Hubert (30 points)
 - **Part C**: TTS with Language Models (40 points)
 
 ---
 
-## Part A: Probing Experiments (35 points)
+## Part A: Probing Experiments (30 points) + BONUS
 
 Understand what information is captured at different layers of the Hubert SSL model.
 
 - **Task 1** (10 pts): Phoneme recognition - train classifier to predict phone labels
 - **Task 2** (10 pts): MFCC regression - train regressor to predict acoustic features
 - **Task 3** (10 pts): Speaker embedding analysis - visualize speaker separation with t-SNE
-- **Task 4** (5 pts): Personal speaker embedding - record your voice and create embeddings
+- **Bonus** (10 pts): Personal speaker embedding - record your voice and create embeddings
 
-**Deliverables**: Plots and answers to questions in PDF report.
+**Deliverables**: 
+ - `hw4-a.pdf` Notebook with all code and outputs
+ - A separate PDF report with all plots and answers to above questions. ONLY this PDF report will be graded.
 
 ---
 
-## Part B: Automatic Speech Recognition (25 points)
+## Part B: Automatic Speech Recognition (30 points)
 
 Fine-tune Hubert model for ASR using CTC loss.
 
@@ -33,12 +35,15 @@ Fine-tune Hubert model for ASR using CTC loss.
 - Generate test transcriptions
 
 **Grading** (based on WER):
-- < 70%: 10 points
-- < 50%: 15 points
-- < 40%: 20 points
-- < 30%: 25 points
+< 70% : 10 points
+< 50% : 15 points
+< 45% : 20 points
+< 40% : 25 points
+< 35% : 30 points (Full points) 
 
-**Submission**: Notebook, `best_model.pt`, `asr_submission.txt`
+**Submission**: 
+- `hw4-b.pdf` Notebook with all code and outputs
+- `asr_submission.txt`
 
 **Note**: Requires GPU, training takes several hours. Save checkpoints regularly.
 
@@ -69,15 +74,15 @@ Implement and train a transformer-based language model for TTS following CosyVoi
 
 **Submission**: 
 - `submission_[YOUR_ID].txt` (auto-generated)
-- `hw4-c.pdf` with all code and outputs
+- `hw4-c.pdf` Notebook with all code and outputs
 
 ---
 
 ## Submission
 
-- **Part A**: Notebook + PDF report (only PDF graded)
-- **Part B**: Notebook + `best_model.pt` + `asr_submission.txt`
-- **Part C**: `submission_[YOUR_ID].txt` + `hw4-c.pdf`
+- **Part A**: `hw4-a.pdf`+ PDF report (only PDF graded)
+- **Part B**: `hw4-b.pdf` + `asr_submission.txt`
+- **Part C**: `hw4-c.pdf` + `submission_[YOUR_ID].txt` 
 
 ---
 
